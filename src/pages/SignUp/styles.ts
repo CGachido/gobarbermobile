@@ -15,7 +15,7 @@ export const Title = styled.Text`
   margin: 64px 0 24px;
 `;
 
-export const BackToSignInButton = styled.TouchableOpacity`
+export const BackToSignUpButton = styled.TouchableOpacity`
   position: absolute;
   left: 0;
   bottom: 0;
@@ -30,7 +30,7 @@ export const BackToSignInButton = styled.TouchableOpacity`
   flex-direction: row;
 `;
 
-export const BackToSignInButtonText = styled.Text`
+export const BackToSignUpButtonText = styled.Text`
   color: #fff;
   font-size: 18px;
   font-family: 'RobotoSlab-Regular';

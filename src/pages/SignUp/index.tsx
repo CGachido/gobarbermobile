@@ -26,8 +26,8 @@ import logo from '../../assets/logo.png';
 import {
   Container,
   Title,
-  BackToSignInButton,
-  BackToSignInButtonText,
+  BackToSignUpButton,
+  BackToSignUpButtonText,
 } from './styles';
 
 interface SignUpFormData {
@@ -36,7 +36,7 @@ interface SignUpFormData {
   password: string;
 }
 
-const SignIn: React.FC = () => {
+const SignUp: React.FC = () => {
   const formRef = useRef<FormHandles>(null);
   const emailInputRef = useRef<TextInput>(null);
   const passwordInputRef = useRef<TextInput>(null);
@@ -144,16 +144,16 @@ const SignIn: React.FC = () => {
           </Container>
         </ScrollView>
       </KeyboardAvoidingView>
-      <BackToSignInButton
+      <BackToSignUpButton
         onPress={() => {
           navigation.navigate('SignIn');
         }}
       >
         <Icon name="arrow-left" size={20} color="#fff" />
-        <BackToSignInButtonText>Voltar</BackToSignInButtonText>
-      </BackToSignInButton>
+        <BackToSignUpButtonText>Voltar</BackToSignUpButtonText>
+      </BackToSignUpButton>
     </>
   );
 };
 
-export default SignIn;
+export default SignUp;
